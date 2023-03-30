@@ -6,9 +6,6 @@ class UsersController < ApplicationController
     user.save!
   end
 
-  def show
-  end
-
   def auth
     render json: {body: "you be authorized"}
   end

@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   get 'login/create'
   get 'users/auth', to: 'users#auth'
-  get 'users', to: 'users#show'
+  post 'users', to: 'users#create'
+  
   
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
